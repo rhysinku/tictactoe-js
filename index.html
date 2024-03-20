@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <main>
+        <div class="scoreBoard">
+            <h1>Score Board</h1>
+            <ul class="scoreList">
+                <li class="score"><q>X</q> <span id="X">0</span></li>
+                <li class="score"><q>Draw</q><span id="Draw">0</span></li>
+                <li class="score"><q>O</q> <span id="O">0</span></li>
+            </ul>
+        </div>
+          
+        <div class="box_con">
+            <div cellIndex="0" class="card"></div>
+            <div cellIndex="1" class="card"></div>
+            <div cellIndex="2" class="card"></div>
+            <div cellIndex="3" class="card"></div>
+            <div cellIndex="4" class="card"></div>
+            <div cellIndex="5" class="card"></div>
+            <div cellIndex="6" class="card"></div>
+            <div cellIndex="7" class="card"></div>
+            <div cellIndex="8" class="card"></div>
+        </div>
+
+        <div class="info_box">
+            <h2 id="statusText"></h2>
+            <h2 id="winnerText"></h2>
+            <button id="restartBtn">Restart</button>
+        </div>
+    
+    </main>
+    
+</body>
+<script src="plugin.js"></script>
+</html>

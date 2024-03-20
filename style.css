@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+
+:root{
+    --priFont: "Madimi One", sans-serif;
+    --bg-color:#192A32;
+    --priColor:#33C5C4;
+    --secColor:#EFB23A;
+
+    --color1:#1F3540;
+    --color2:#0F212B;
+
+    --color3:#AEC4CF;
+
+    --boxshadow:0px 5px 0px 5px var(--color2);
+}
+
+body{display: flex; justify-content: center; align-items: center; height: 100vh; width: 100%; font-family: var(--priFont) ; position: relative; background: var(--bg-color); color: var(--color3); font-size: 20px; cursor: pointer;} 
+main{max-width: 500px; width: 100%; text-align: center;}
+.box_con{display: grid; grid-template-columns: repeat(3,1fr); max-width: 800px; width: 100%; margin-inline: auto; gap: 15px; }
+.card{ width: 100%; aspect-ratio: 1/1; background: var(--color1); justify-self: center; cursor: pointer; border-radius: 10px; box-shadow:var(--boxshadow);}
+.card{font-size: 7rem; display: flex; align-items: center; justify-content: center;}
+.info_box{text-align: center; margin-top: 35px; display: flex; justify-content: space-evenly; align-items: center;}
+.info_box h2{font-size: 30px; line-height: 100%; padding: 25px; background: var(--color1); border-radius: 25px; box-shadow: var(--boxshadow); color: var(--color3);}
+.info_box button{width: max-content; padding: 15px; border: none; font-size: 35px; border-radius: 25px; font-family: var(--priFont); color: var(--color1);}
+.info_box button:hover{background: var(--color1); color: #fff; box-shadow: var(--boxshadow);}
+
+#winnerText{ font-size: 30px; line-height: 100%; padding: 25px; background: var(--color1); border-radius: 25px; box-shadow: var(--boxshadow); color: var(--color3);text-align: center; display: inline-block; }
+
+.scoreBoard{margin-bottom: 15px;}
+.scoreBoard h1{font-size: 40px;}
+
+.scoreList{display: flex; justify-content: space-evenly; margin-block: 25px;}
+.scoreList li{font-size: 40px; width: max-content; padding: 15px 25px; background: var(--color1); color: var(--color3); box-shadow: var(--boxshadow); border-radius: 25px; display: flex; flex-direction: column; row-gap: 10px;}
+.scoreList li q{font-size: 20px;}
